@@ -29,3 +29,9 @@ Detect the language of every line in a file (or stdin):
 ```
 python python/detect_file.py input.txt
 ```
+
+Interactive mode:
+
+```
+python python/interactive.py
+```
