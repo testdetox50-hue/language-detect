@@ -23,3 +23,9 @@ java -cp out com.example.langdetect.LanguageDetectorTest
 python python/language_detector.py "Le chat est dans la maison"
 python python/tests/test_language_detector.py
 ```
+
+Detect the language of every line in a file (or stdin):
+
+```
+python python/detect_file.py input.txt
+```
