@@ -29,7 +29,7 @@ public class LanguageDetector {
         if (text == null || text.trim().isEmpty()) {
             return "Unknown";
         }
-        String[] tokens = text.toLowerCase().split("[^\\p{L}]+");
+        String[] tokens = text.toLowerCase(java.util.Locale.ROOT).split("[^\\p{L}]+");
         String best = "Unknown";
         int bestScore = 0;
         for (Map.Entry<String, Set<String>> entry : stopWords.entrySet()) {
